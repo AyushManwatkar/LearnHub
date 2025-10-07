@@ -1,0 +1,22 @@
+spring.application.name=backend
+
+# JPA/Hibernate Configuration
+# This tells Hibernate to update the database schema automatically based on your entities.
+spring.jpa.hibernate.ddl-auto=update
+
+# This shows the actual SQL queries in the console, which is great for debugging.
+spring.jpa.show-sql=true
+
+# PostgreSQL Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/learnhub_db
+spring.datasource.username=YOUR_POSTGRES_USERNAME
+spring.datasource.password=YOUR_POSTGRES_PASSWORD
+
+# ... (other properties)
+
+# JWT Configuration
+jwt.secret.key=YOUR_BASE64_ENCODED_JWT_SECRET_KEY
+jwt.expiration.ms=86400000
+
+# YouTube API Configuration
+youtube.api.key=YOUR_YOUTUBE_API_KEY
