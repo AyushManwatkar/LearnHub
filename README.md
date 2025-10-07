@@ -20,10 +20,11 @@
 
 ## 📸 Screenshots
 
-*A screenshot of the homepage, dashboard, and video player would look great.*
 <p align="center">
   <img src="Images/Screenshot 2025-10-07 174144.png" alt="LearnHub Homepage" width="400"/>
   <img src="Images/Screenshot 2025-10-07 174317.png" alt="LearnHub Dashboard" width="400"/>
+  <img src="Images/Screenshot 2025-10-07 174227.png" alt="LearnHub Search Results" width="400"/>
+  <img src="Images/Screenshot 2025-10-07 174354.png" alt="LearnHub Video Player" width="400"/>
 </p>
 
 ---
@@ -67,8 +68,8 @@ Ensure you have the following installed:
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone https://github.com/AyushManwatkar/LearnHub.git
+    cd LearnHub
     ```
 
 2.  **Backend Setup** - Navigate to the backend directory: `cd backend`
@@ -98,4 +99,3 @@ Ensure you have the following installed:
     Open your browser and navigate to `http://localhost:3000`. Enjoy! 🎉
 
 ---
-**Note:** Remember to replace the placeholder links for the git clone command and the screenshots with your actual links.
