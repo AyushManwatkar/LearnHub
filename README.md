@@ -1,92 +1,101 @@
-# LearnHub - A Distraction-Free YouTube Learning Platform
+<div align="center">
+  
+  # 🎓 LearnHub
 
-LearnHub is a full-stack web application designed to transform YouTube playlists into a focused, course-like learning experience. Users can search for educational content, add playlists to their personal library, track their progress, and take notes on individual videos, all within a clean, distraction-free interface.
+  <p>
+    A distraction-free, full-stack web application that transforms YouTube playlists into a focused, course-like learning experience.
+  </p>
 
-## Features
-- **User Authentication:** Secure user registration and login system using JWT (JSON Web Tokens).
-- **YouTube API Integration:** Search for YouTube playlists by keyword directly within the app.
-- **Personal Course Library:** Users can add and remove courses from their personal dashboard.
-- **Progress Tracking:** Mark individual videos as "complete" and view overall course progress on a progress bar.
-- **Note-Taking:** A dedicated notes section for each video, with notes saved per-user.
-- **Manual CSS Styling:** A custom-built, responsive UI using CSS Modules for each component.
-- **Session Management:** User login persists during a browser session and is cleared upon closing the tab.
+  <p>
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+    <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot"/>
+    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
+    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  </p>
 
-## Tech Stack
+</div>
 
-### Backend
-- **Java 21**
-- **Spring Boot 3**
-- **Spring Security** (for JWT authentication)
-- **Spring Data JPA / Hibernate**
-- **PostgreSQL**
-- **Maven**
-- **jjwt (Java JWT)**
-- **Google API Client** (for YouTube Data API v3)
+---
 
-### Frontend
-- **Next.js 14** (with App Router)
-- **React 18**
-- **CSS Modules**
-- **Axios** (for API communication)
+## 📸 Screenshots
 
-## Prerequisites
-Before you begin, ensure you have the following installed:
-- JDK 21 or later
-- Apache Maven
-- Node.js & npm
-- PostgreSQL
+*A screenshot of the homepage, dashboard, and video player would look great.*
+<p align="center">
+  <img src="Images/Screenshot 2025-10-07 174144.png" alt="LearnHub Homepage" width="400"/>
+  <img src="Images/Screenshot 2025-10-07 174317.png" alt="LearnHub Dashboard" width="400"/>
+</p>
 
-## Setup and Installation
+---
+
+## ✨ Features
+
+-   🔐 **Secure User Authentication:** Full registration and login system using JWT (JSON Web Tokens).
+-   🔍 **YouTube API Integration:** Search for YouTube playlists by keyword directly within the app.
+-   📚 **Personal Course Library:** Users can add and remove courses from their personal dashboard.
+-   📊 **Progress Tracking:** Mark videos as "complete" and view overall course progress on a progress bar.
+-   📝 **Note-Taking:** A dedicated notes section for each video, saved per-user.
+-   🎨 **Custom Styling:** A fully custom, responsive UI built with pure CSS Modules.
+-   🚪 **Session Management:** Login persists during a browser session and is cleared upon closing the tab.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category      | Technology                                    |
+| ------------- | --------------------------------------------- |
+| **Frontend** | `Next.js` `React` `CSS Modules` `Axios`         |
+| **Backend** | `Java 21` `Spring Boot` `Spring Security (JWT)` `JPA/Hibernate` |
+| **Database** | `PostgreSQL`                                  |
+| **Build Tool**| `Maven` (Backend) `npm` (Frontend)            |
+
+---
+
+## 🚀 Getting Started
 
 Follow these steps to get the project running locally.
 
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
-```
+### Prerequisites
 
-### 2. Backend Setup
-The backend is a Spring Boot application.
+Ensure you have the following installed:
+-   JDK 21 or later
+-   Apache Maven
+-   Node.js & npm
+-   PostgreSQL
 
-1.  Navigate to the backend directory:
+### Installation and Setup
+
+1.  **Clone the Repository**
     ```bash
-    cd backend
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
     ```
-2.  **Configure the Database:**
-    * Create a new PostgreSQL database (e.g., `learnhub_db`).
-3.  **Configure Application Properties:**
-    * In `src/main/resources/`, you will find a file named `application.properties.example`.
-    * Create a copy of this file and name it `application.properties`.
-    * Open `application.properties` and fill in your PostgreSQL database credentials, a Base64-encoded JWT secret key, and your YouTube Data API v3 key.
-4.  **Build and Run the Application:**
-    * You can run the application directly from your IDE by running the `BackendApplication.java` file.
-    * Alternatively, you can use Maven:
+
+2.  **Backend Setup** - Navigate to the backend directory: `cd backend`
+    - Create a new PostgreSQL database (e.g., `learnhub_db`).
+    - In `src/main/resources/`, copy `application.properties.example` to a new file named `application.properties`.
+    - Fill in your database credentials, JWT secret, and YouTube API key in the new `application.properties` file.
+    - Build and run the application:
       ```bash
-      # Build the project
-      mvn clean install
-      
-      # Run the project
+      # You can run from an IDE or use Maven
       mvn spring-boot:run
       ```
-    * The backend server will start on `http://localhost:8080`.
+    - The backend will be running on `http://localhost:8080`.
 
-### 3. Frontend Setup
-The frontend is a Next.js application.
+3.  **Frontend Setup**
+    - Open a new terminal and navigate to the frontend directory: `cd frontend` (or `learnhub-client`).
+    - Install dependencies:
+      ```bash
+      npm install
+      ```
+    - Run the development server:
+      ```bash
+      npm run dev
+      ```
+    - The frontend will be running on `http://localhost:3000`.
 
-1.  Open a new terminal and navigate to the frontend directory (e.g., `learnhub-client`):
-    ```bash
-    cd learnhub-client 
-    ```
-2.  **Install Dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Run the Development Server:**
-    ```bash
-    npm run dev
-    ```
-    * The frontend development server will start on `http://localhost:3000`.
+4.  **Access the Application**
+    Open your browser and navigate to `http://localhost:3000`. Enjoy! 🎉
 
-### 4. Accessing the Application
-You can now access the LearnHub application by navigating to `http://localhost:3000` in your web browser.
+---
+**Note:** Remember to replace the placeholder links for the git clone command and the screenshots with your actual links.
