@@ -1,0 +1,80 @@
+.pageContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1c1d1f;
+}
+
+.description {
+  font-size: 1rem;
+  color: #6a6f73;
+  margin-bottom: 2.5rem;
+}
+
+.videoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.videoCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #d1d7dc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s;
+}
+.videoCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.videoInfo {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 120px;
+  height: 67px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.videoTitle {
+  font-weight: 600;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.completeButton {
+  background-color: #1e8e3e;
+  color: white;
+}
+
+.incompleteButton {
+  background-color: #f1f3f4;
+  color: #333;
+}
+.incompleteButton:hover {
+  background-color: #e8eaed;
+}
